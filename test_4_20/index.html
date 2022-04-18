@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <style>
+      .main {
+        width: 100vw;
+        height: 100vh;
+        background: #87ceec;
+        display: flex;
+        align-items: center;
+      }
+      .center {
+        flex-grow: 1;
+        background: #adff30;
+        align-self: stretch;
+      }
+      .side {
+        width: 100px;
+        height: 100px;
+        background: #ffc0cb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="side">1</div>
+      <div class="center">2</div>
+      <div class="side">3</div>
+    </div>
+  </body>
+</html>
