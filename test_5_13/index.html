@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css" />
+    <style>
+      .top {
+        width: 308px;
+        border: 1px #dadadc solid;
+        margin: 0 auto;
+        padding: 0 14px;
+      }
+      .top-title {
+        height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+      }
+      .top-list {
+        height: 352px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 8px;
+        grid-template-areas:
+          "a1 a3 a3"
+          "a2 a3 a3"
+          "a4 a4 a5"
+          "a6 a7 a7";
+      }
+      .top-list div {
+          overflow: hidden;
+      }
+      .top-list div:nth-of-type(3) {
+        grid-area: a3;
+      }
+      .top-list div:nth-of-type(4) {
+        grid-area: a4;
+      }
+      .top-list div:nth-of-type(7) {
+        grid-area: a7;
+      }
+
+      .top-list a{
+          display: block;
+          width: 100%;
+          height: 100%;
+          color: white;
+          line-height: 30px;
+      }
+      .top-list h3 {
+          text-align: right;
+          margin-right: 4px;
+      }
+      .top-list p {
+          text-align: center;
+      }
+
+      .theme1 {
+        background: linear-gradient(#0e7dec, #24a3f8);
+        border: 1px #2a9adc solid;
+      }
+      .theme2 {
+        background-image: linear-gradient(#f2246c, #fe5bac);
+        border: 1px #da2061 solid;
+      }
+      .theme3 {
+        background-image: linear-gradient(#d46300, #e5ad1c);
+        border: 1px #cd9818 solid;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top">
+      <div class="top-title">今日上榜</div>
+      <div class="top-list">
+        <div class="theme1">
+          <a href="#">
+            <h3>实时热点</h3>
+            <p>阿里第一颗芯a1</p>
+          </a>
+        </div>
+        <div class="theme2">
+          <a href="#">
+            <h3>实时热点</h3>
+            <p>阿里第一颗芯a2</p>
+          </a>
+        </div>
+        <div class="theme1">
+          <a href="#">
+            <h3>实时热点</h3>
+            <p>阿里第一颗芯a3</p>
+          </a>
+        </div>
+        <div class="theme1">
+          <a href="#">
+            <h3>实时热点</h3>
+            <p>阿里第一颗芯a4</p>
+          </a>
+        </div>
+        <div class="theme1">
+          <a href="#">
+            <h3>实时热点</h3>
+            <p>阿里第一颗芯a5</p>
+          </a>
+        </div>
+        <div class="theme3">
+          <a href="#">
+            <h3>实时热点</h3>
+            <p>阿里第一颗芯a6</p>
+          </a>
+        </div>
+        <div class="theme3">
+          <a href="#">
+            <h3>实时热点</h3>
+            <p>阿里第一颗芯a7</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
